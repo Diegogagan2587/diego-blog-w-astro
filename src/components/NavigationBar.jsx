@@ -5,6 +5,7 @@ import { faX, faBars } from '@fortawesome/free-solid-svg-icons'
 
 const NavigationBar = ({scrollToSection}) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [currentPage, setCurrentPage] = useState('');
 
   const dropdownOpenClasses =
     'absolute h-screen sm:h-auto left-0 sm:left-auto top-10 sm:top-auto bg-[#201DCE99] backdrop-blur-[5px] bg-opacity-60 text-white font-semibold text-3xl sm:text-base leading-10';
@@ -14,7 +15,7 @@ const NavigationBar = ({scrollToSection}) => {
   return (
     <nav
       className={`fixed flex justify-between lg:justify-around items-center px-5
-    w-full max-w-[100vw] left-0
+    w-full
     transition-all duration-500 ease-in-out
     ${isMenuOpen?'bg-[#201DCE99] sm:bg-white':'bg-white'}  h-10 z-30`}
     >
@@ -70,7 +71,7 @@ const NavigationBar = ({scrollToSection}) => {
         </li>
         <li>
           <a 
-          className=''
+          className='cursor-pointer'
           href='/blog'
           >Blog</a>
         </li>
