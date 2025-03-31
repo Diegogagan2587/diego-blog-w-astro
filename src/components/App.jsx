@@ -1,10 +1,10 @@
-import { useRef, useState } from 'react';
+
 import IntroductionSection from './IntroductionSection';
 import NavigationBar from './NavigationBar';
 import PortfolioSection from './PortfolioSection';
 import AboutSection from './AboutSection';
 import ContactForm from './ContactForm';
-
+import { useRef, useState } from 'react';
 
 function App() {
   const [activeSection, setActiveSection] = useState('introduction'); 
@@ -33,7 +33,7 @@ function App() {
       <header className='font-poppins'>
         <NavigationBar scrollToSection={scrollToSection} activeSection={activeSection}/>
       </header>
-      <main className='bg-[#F4F5F7] font-poppins'>
+      <main className='bg-[#F4F5F7] font-poppins home-main'>
         <IntroductionSection sectionRef={introductionRef} isActive={activeSection === 'introductionRef'}/>
         <PortfolioSection sectionRef={portfolioRef} isActive={activeSection==='portfolioRef'}/>
         <AboutSection sectionRef={ aboutRef } isActive={activeSection==='aboutRef'}/>
