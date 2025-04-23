@@ -1,9 +1,9 @@
 import PropTypes from 'prop-types';
 import Tag from './Tag';
 import Btn from './Btn';
-import CloseIcon from '../../public/close-popup-button.png';
-import SeeProjectIcon from '../../public/see-live-icon.png';
-import SeeCodeIcon from '../../public/see-source-icoin.png';
+const CloseIcon = '/close-popup-button.png';
+const SeeProjectIcon = '/see-live-icon.png';
+const SeeCodeIcon = '/see-source-icoin.png';
 
 const PopUp = ({ project, handlePopUp }) => {
   return (
