@@ -11,7 +11,9 @@ const ContactForm = ({sectionRef}) => {
       >
         <div className='flex flex-col sm:max-w-[801px] sm:max-h-[577px] gap-3 md:px-[177px]'>
         <h2 className="font-bold text-4xl text-center text-white">
+          <span className='text-white'>
           Contact me
+          </span>
         </h2>
         <p className="text-xl leading-7 text-center text-[#EBEBFF]">
           If you have an application you are interested in developing, a feature
@@ -22,12 +24,12 @@ const ContactForm = ({sectionRef}) => {
         <form action="https://formspree.io/f/mbjewygq" method="POST" className='flex flex-col gap-5'>
           <div className="form-group">
             <label htmlFor="name">
-              <input type="text" id="name" name="name" placeholder="name" maxLength="30" required className='w-full rounded-lg p-2'/>
+              <input type="text" id="name" name="name" placeholder="name" maxLength="30" required className='w-full rounded-lg p-2 bg-white'/>
             </label>
           </div>
           <div className="form-group">
             <label htmlFor="email">
-              <input type="email" id="email" name="email" placeholder="email@domain.com" required className='w-full rounded-lg p-2'/>
+              <input type="email" id="email" name="email" placeholder="email@domain.com" required className='w-full rounded-lg p-2 bg-white'/>
             </label>
           </div>
           <div className="form-group">
@@ -38,7 +40,7 @@ const ContactForm = ({sectionRef}) => {
                 placeholder="Write your message here..."
                 maxLength="500"
                 required
-                className='w-full rounded-lg p-2 h-36'
+                className='w-full rounded-lg p-2 h-36 bg-white'
               />
             </label>
           </div>
