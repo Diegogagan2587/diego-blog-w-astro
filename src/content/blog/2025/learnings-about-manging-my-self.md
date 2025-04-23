@@ -1,3 +1,9 @@
+---
+title: 'First post'
+description: 'Lorem ipsum dolor sit amet'
+pubDate: 'Jul 08 2022'
+heroImage: '/blog-placeholder-3.jpg'
+---
 Today I've been watching some videos on youtube, and below there are some notes i've found usefull
 
 
