@@ -5,8 +5,8 @@ const ContactForm = ({sectionRef}) => {
     <div className="bg-white" ref={sectionRef}>
       <div
         id="contact"
-        className="bg-[url('./background-form-mobile-react.svg')] bg-no-repeat bg-contain bg-right
-        md:bg-[url('./assets/img/background-form-desktop-react.svg')] md:bg-no-repeat md:bg-contain md:bg-center
+        className="bg-[url('/background-form-mobile-react.svg')] bg-no-repeat bg-contain bg-right
+        md:bg-[url('/background-form-desktop-react.svg')] md:bg-no-repeat md:bg-contain md:bg-center
         border-2 rounded-tl-[68px] bg-[#6070FF] min-h-screen px-6 pt-24 flex justify-center items-center"
       >
         <div className='flex flex-col sm:max-w-[801px] sm:max-h-[577px] gap-3 md:px-[177px]'>
