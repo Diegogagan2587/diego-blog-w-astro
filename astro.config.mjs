@@ -9,7 +9,7 @@ import tailwindcss from '@tailwindcss/vite';
 
 // https://astro.build/config
 export default defineConfig({
-  site: 'https://dvloper-z.com/',
+  site: 'https://test.dvloper-z.com/',
   integrations: [mdx(), sitemap(), react()],
 
   vite: {
