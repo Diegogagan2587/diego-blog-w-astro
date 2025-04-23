@@ -1,17 +1,17 @@
-//import imgMetricsWebApp from '/assets/img/projects/metrics-web-app.png';
-import imgSpaceTravelersHub from '../../public/space-travelers-hub.png';
-//import imgMathMagicians from '/assets/img/projects/Math-Magicians.png';
-import imgCreativeDevelopers from '../../public/feature-creative-developers.png';
-//import imgTodayToDo from '/assets/img/projects/capstone-projeect-2.png';
-import imgWorldWideFlags from '../../public/world-wide-flags.png';
-// import imgAwesomeBooks from '/assets/img/projects/awesome-books.png';
-//import imgDocumentationPage from '/assets/img/projects/documentation-page.png';
-import imgProductLandingPage from '../../public/landing-page-original-trombones.png';
-// import imgTributePage from '/assets/img/projects/tribute-page.png';
-import bookAConcert from '../../public/book-a-concert.png';
-import recipeApp from '../../public/recipe-app-best-dishes.png';
-import budgetApp from '../../public/budget-app-live-demo.png';
-//import catalogueOfThings from '/assets/img/projects/catalogue-of-my-things.png';
+//const imgMetricsWebApp = '/assets/img/projects/metrics-web-app.png';
+const imgSpaceTravelersHub = '/space-travelers-hub.png';
+//const imgMathMagicians = '/assets/img/projects/Math-Magicians.png';
+const imgCreativeDevelopers = "/feature-creative-developers.png";
+//const imgTodayToDo = '/assets/img/projects/capstone-projeect-2.png';
+const imgWorldWideFlags = '/world-wide-flags.png';
+// const imgAwesomeBooks = '/assets/img/projects/awesome-books.png';
+//const imgDocumentationPage = '/assets/img/projects/documentation-page.png';
+const imgProductLandingPage = '/landing-page-original-trombones.png';
+// const imgTributePage = '/assets/img/projects/tribute-page.png';
+const bookAConcert = '/book-a-concert.png';
+const recipeApp = '/recipe-app-best-dishes.png';
+const budgetApp = '/budget-app-live-demo.png';
+//const catalogueOfThings = '/assets/img/projects/catalogue-of-my-things.png';
 
 const projects = [
   {
@@ -87,9 +87,9 @@ const projects = [
   {
     name: 'Space Travelers',
     description:
-      '"Space Travelers" is a Single Page Application (SPA) that allows users to explore a list of rockets and missions retrieved from the Space-X API.',
+      '"Space Travelers" is a Single Page Application (SPA) that allows users to explore a list of rockets and missions retrieved = the Space-X API.',
     descriptionDesk:
-      '"Space Travelers" is a Single Page Application (SPA) that allows users to explore a list of rockets and missions retrieved from the Space-X API. Users can click to reserve a rocket, join a mission, and view reserved or joined missions in the My Profile section. Built with HTML5, CSS3, JavaScript, and React.',
+      '"Space Travelers" is a Single Page Application (SPA) that allows users to explore a list of rockets and missions retrieved = the Space-X API. Users can click to reserve a rocket, join a mission, and view reserved or joined missions in the My Profile section. Built with HTML5, CSS3, JavaScript, and React.',
     img: imgSpaceTravelersHub,
     technologies: ['HTML', 'CSS', 'Javascript', 'React', 'Redux'],
     liveVersion:
@@ -159,7 +159,7 @@ const projects = [
     liveVersion: 'https://diegogagan2587.github.io/Capstone-project-module-1/',
     source: 'https://github.com/Diegogagan2587/Capstone-project-module-1',
     descriptionDesk:
-      'The Creative Developers Summit is a gathering that embraces emerging software developers, focusing on the theme of persistence. This annual event aims to foster collaboration and knowledge sharing among developers interested in building robust and reliable software solutions. Attendees include enthusiasts from various domains such as database management, cloud computing, and data storage. Together, we explore innovative techniques, discuss best practices, and envision a future where persistence plays a crucial role in shaping the digital landscape. Join us to contribute and learn at this dynamic summit!',
+      'The Creative Developers Summit is a gathering that embraces emerging software developers, focusing on the theme of persistence. This annual event aims to foster collaboration and knowledge sharing among developers interested in building robust and reliable software solutions. Attendees include enthusiasts = various domains such as database management, cloud computing, and data storage. Together, we explore innovative techniques, discuss best practices, and envision a future where persistence plays a crucial role in shaping the digital landscape. Join us to contribute and learn at this dynamic summit!',
     imgDesk: '/assets/img/projects/capstone-projeect-1-desktop-popup.png',
     imgPopMobile: '/assets/img/projects/capstone-projeect-1.png',
     company: 'Self-employed',
@@ -226,7 +226,7 @@ const projects = [
   //   source:
   //     'https://github.com/Diegogagan2587/Diegogagan2587.github.io/tree/master/diegolab/rwd-projects',
   //   descriptionDesk:
-  //     'JS documentation is a simple documentation page to serve as instruction or reference. It was built with plain HTML and CSS to put in practice HTML and CSS basic skills. The content has been taken from MDN.',
+  //     'JS documentation is a simple documentation page to serve as instruction or reference. It was built with plain HTML and CSS to put in practice HTML and CSS basic skills. The content has been taken = MDN.',
   //   imgDesk: '/assets/img/projects/documentation-page.png',
   //   imgPopMobile: '/assets/img/projects/documentation-page.png',
   //   company: 'Self-employed',
