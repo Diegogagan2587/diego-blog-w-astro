@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import skills from './skills.js';
-import DropDownIcon from '../../public/icons/Disabledbutton-down-arrow.png';
+const DropDownIcon = '/icons/Disabledbutton-down-arrow.png';
 
 const Skills = () => {
   const [skillVisibility, setSkillVisibility] = useState({Languages:true,});
