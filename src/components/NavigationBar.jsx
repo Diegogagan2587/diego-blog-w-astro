@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faX, faBars } from '@fortawesome/free-solid-svg-icons';
 
-const NavigationBar = ({ scrollToSection }) => {
+const NavigationBar = ({ scrollToSection, site }) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [currentPage, setCurrentPage] = useState('');
 
