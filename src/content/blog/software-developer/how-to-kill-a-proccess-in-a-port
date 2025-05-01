@@ -1,5 +1,8 @@
 ---
 title: how to kill a process in a port
+description: "Instructions about how to kill a proces in a port in linux."
+pubDate: '2025-05-01 17:33'
+heroImage: '/blog-placeholder-1.jpg'
 ---
 
 ## Step 1
