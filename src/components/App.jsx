@@ -39,7 +39,7 @@ function App() {
       <main className='bg-[#F4F5F7] font-poppins home-main'>
         <IntroductionSection sectionRef={introductionRef} isActive={activeSection === 'introductionRef'}/>
         <PortfolioSection sectionRef={portfolioRef} isActive={activeSection==='portfolioRef'}/>
-        <BlogSection sectionRef={blogRef} isActive={activeSection === 'blog'} />
+        <BlogSection sectionRef={blogRef} isActive={activeSection === 'blogRef'} />
         <AboutSection sectionRef={ aboutRef } isActive={activeSection==='aboutRef'}/>
         <ContactForm sectionRef={ contactRef } isActive={activeSection==='contactRef'}/>
       </main>

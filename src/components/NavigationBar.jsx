@@ -74,6 +74,15 @@ const NavigationBar = ({ scrollToSection, site }) => {
           </a>
         </li>
         <li>
+          <a className="cursor-pointer" 
+             onClick={() => {
+               handleNavigationClick('blogRef');
+             }}
+           >
+            Blog
+          </a>
+        </li>
+        <li>
           <a
             className="cursor-pointer"
             onClick={() => {
@@ -91,11 +100,6 @@ const NavigationBar = ({ scrollToSection, site }) => {
             }}
           >
             Contact
-          </a>
-        </li>
-        <li>
-          <a className="cursor-pointer" href="/blog">
-            Blog
           </a>
         </li>
       </ul>
