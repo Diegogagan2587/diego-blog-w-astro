@@ -1,6 +1,6 @@
 ---
 title: Open Budget App
-description: 
+description: Below the technical description of the project Open Budget App.
 pubDate: 2025-05-04 15:54
 heroImage: /blog-placeholder-1.jpg
 ---
