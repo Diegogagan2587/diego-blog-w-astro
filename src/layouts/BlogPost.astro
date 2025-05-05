@@ -51,6 +51,7 @@ const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
 			.last-updated-on {
 				font-style: italic;
 			}
+
 		</style>
 	</head>
 
@@ -61,18 +62,25 @@ const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
 				<div class="hero-image">
 					{heroImage && <img width={1020} height={510} src={heroImage} alt="" />}
 				</div>
-				<div class="prose 
-				[&_ul]:list-disc 
-				[&_ul]:my-4
-				[&_ul]:pl-6 
-				[&_ul>li]:text-gray-700 
-				[&_ul>li]:leading-6 
-				[&_ul]:space-y-3 
-				[&_ul]:text-base 
-				[&_ul]:tracking-wide 
-				[&_ul]:list-inside 
-				[&_ul>li>ul]:pl-4
-				[&_hr]:my-6
+				<div class="
+					prose 
+					w-[720px]
+					max-w-[calc(100%-2em)]
+					mx-auto
+					px-4
+					text-[rgb(var(--gray-dark))]
+
+					[&_ul]:list-disc 
+					[&_ul]:my-4
+					[&_ul]:pl-6 
+					[&_ul>li]:leading-6 
+					[&_ul]:space-y-3 
+					[&_ul]:text-base 
+					[&_ul]:tracking-wide 
+					[&_ul]:list-inside 
+					[&_ul>li>ul]:pl-4
+					[&_hr]:my-6
+					[]
 				">
 					<div class="title">
 						<div class="date">
