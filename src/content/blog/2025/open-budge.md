@@ -22,32 +22,42 @@ heroImage: /blog-placeholder-1.jpg
 ```plaintext
 User
  └── has_many :budgets
+ └── has_many :categories
+ └── has_many :incomes
 
 Budget
  └── belongs_to :user
  └── has_many :budget_items
  └── has_many :expenses
+ └── has_many :incomes
 
 BudgetItem (categoría planificada)
  └── belongs_to :budget
- └── category:string (ej. "Gastos Fijos")
- └── subcategory:string (ej. "Renta")
+ └── belongs_to :category
  └── estimated_amount:decimal
+ 
 
 Categories (Expenses clasification)
  └── belongs_to :user
- └── has_manu :expenses
+ └── has_many :expenses
  └── has_many :budget_items
  └── t.string :name
  └── t.string :color (optional for UI tags)
 
 Expense (gasto real)
  └── belongs_to :budget, optional: true
- └── category:string
- └── subcategory:string
+ └── belongs_to :category, optional: true
+ └── belongs_to :user, optional: true
  └── description:string
  └── amount:decimal
  └── spent_on:date
+
+Income
+ └── belongs_to :user, optional: true
+ └── belongs_to :budget, optional: true
+ └── source:string
+ └── amount:decimal
+ └── received_on:date
 ```
 
 ---
@@ -69,18 +79,24 @@ create_table "budgets" do |t|
   t.timestamps
 end
 
+create_table "categories" do |t|
+  t.references :user, foreign_key: true
+  t.string "name"
+  t.string "color"
+  t.timestamps
+end
+
 create_table "budget_items" do |t|
-  t.references "budget", foreign_key: true
-  t.string "category"
-  t.string "subcategory"
+  t.references :budget, foreign_key: true
+  t.references :category, foreign_key: true
   t.decimal "estimated_amount", precision: 10, scale: 2
   t.timestamps
 end
 
 create_table "expenses" do |t|
-  t.references "budget", foreign_key: true, null: true
-  t.string "category"
-  t.string "subcategory"
+  t.references :user, foreign_key: true
+  t.references :budget, foreign_key: true, null: true
+  t.references :category, foreign_key: true, null: true
   t.string "description"
   t.decimal "amount", precision: 10, scale: 2
   t.date "spent_on"
