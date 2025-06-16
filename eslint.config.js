@@ -7,9 +7,22 @@ import { defineConfig } from "eslint/config";
 
 
 export default defineConfig([
-  { files: ["**/*.{js,mjs,cjs,jsx}"], plugins: { js }, extends: ["js/recommended"] },
-  { files: ["**/*.{js,mjs,cjs,jsx}"], languageOptions: { globals: globals.browser } },
-  pluginReact.configs.flat.recommended,
-  { files: ["**/*.md"], plugins: { markdown }, language: "markdown/gfm", extends: ["markdown/recommended"] },
-  { files: ["**/*.css"], plugins: { css }, language: "css/css", extends: ["css/recommended"] },
+  {
+    files: ["**/*.{js,mjs,cjs,jsx,ts,tsx}"],
+    plugins: { js, react: pluginReact },
+    languageOptions: { globals: globals.browser },
+    rules: pluginReact.configs.recommended.rules, // usa las reglas directamente
+  },
+  {
+    files: ["**/*.md"],
+    plugins: { markdown },
+    language: "markdown/gfm",
+    extends: ["markdown/recommended"]
+  },
+  {
+    files: ["**/*.css"],
+    plugins: { css },
+    language: "css/css",
+    extends: ["css/recommended"]
+  },
 ]);
