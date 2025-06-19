@@ -1,0 +1,22 @@
+---
+import BaseHead from '../components/BaseHead.astro';
+import App from '../components/App.jsx';
+import Footer from '../components/Footer.astro';
+import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+		<style>			
+			main {
+				width: 100% !important;
+			}
+		</style>
+	</head>
+	<body class="home-body">		
+		<App client:load/>
+		<Footer />cl
+	</body>
+</html>
