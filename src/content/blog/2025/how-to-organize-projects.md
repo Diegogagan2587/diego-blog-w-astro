@@ -72,6 +72,42 @@ Documento interno que define **qué se va a construir** y **por qué**. Describe
 
 ---
 
+### 🧩 CRD vs PRD: ¿Por qué no es lo mismo?
+
+Aunque el CRD ya documenta todo lo que el cliente quiere y proporciona, **no sustituye al PRD**. Aquí está la clave:
+
+> El **CRD** captura **lo que el cliente quiere**.
+> El **PRD** define **lo que realmente se va a construir** y por qué.
+
+El CRD puede contener información de negocio, flujos deseados, accesos, ideas, locuras, caprichos, y expectativas. El PRD es donde aterrizas todo eso con cabeza fría, defines alcance, pones límites y priorizas.
+
+---
+
+### 🎅🏻 Analogía: Carta a Santa Claus vs Realidad
+
+* **El CRD es la carta a Santa Claus**.
+  “Quiero un iPhone, una bici y que mi perro hable.”
+
+* **El PRD es lo que puede construir el taller de duendes con presupuesto limitado.**
+  “Te damos un Android con cámara, una patineta, y una placa QR para el perro.”
+
+Ambos son necesarios: uno expresa deseos, el otro define compromisos.
+
+---
+
+### 📊 Tabla comparativa: CRD vs PRD
+
+| Concepto             | **CRD**                                          | **PRD**                                           |
+| -------------------- | ------------------------------------------------ | ------------------------------------------------- |
+| **¿Qué es?**         | Documento de insumos y expectativas del cliente  | Documento que define el producto y su alcance     |
+| **¿Quién lo llena?** | Tú, con ayuda del cliente                        | Tú y tu equipo interno                            |
+| **¿Para quién es?**  | Cliente, soporte, PMs del cliente                | Producto, desarrollo, dirección                   |
+| **¿Qué incluye?**    | Accesos, APIs, flujos, contenido, personas clave | Problema, solución, métricas, alcance, trade-offs |
+| **Nivel**            | Información bruta                                | Plan filtrado y accionable                        |
+| **Tipo de uso**      | Entrada al proceso                               | Planificación y ejecución                         |
+
+---
+
 ### 🧠 **Tech Spec - Technical Specification**
 
 **🧠 ¿Qué es?**
