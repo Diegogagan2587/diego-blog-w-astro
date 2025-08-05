@@ -8,7 +8,7 @@ Esta guía te ayudará a elegir la plantilla adecuada según el tipo de proyecto
 
 **🧠 ¿Qué es?**
 
-Documento que recopila **todo lo que necesitas del cliente** para poder desarrollar su proyecto correctamente. Desde información técnica hasta contenido de negocio, bases de conocimiento, integraciones, y responsables de comunicación.
+Documento que recopila **todo lo que el cliente espera lograr y todo lo que necesitas del cliente** para poder desarrollar su proyecto correctamente. Desde información técnica hasta contenido de negocio, bases de conocimiento, integraciones, y responsables de comunicación.
 
 **🎯 ¿Cuándo usarlo?**
 
