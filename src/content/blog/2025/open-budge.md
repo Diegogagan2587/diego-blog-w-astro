@@ -1,6 +1,6 @@
 ---
 title: Open Budget App
-description: Below the technical description of the project Open Budget App.
+description: Open budget is a project I'm developing for better planning of my finances
 pubDate: 2025-05-04 15:54
 heroImage: /blog-placeholder-1.jpg
 ---
