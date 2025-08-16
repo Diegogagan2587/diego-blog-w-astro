@@ -2,7 +2,7 @@
 title: 'Honeypots in Web Forms: A Simple Anti-Spam Technique'
 description: 'Learn how honeypots work in web forms, why they reduce spam submissions without hurting user experience, and their benefits and limitations.'
 pubDate: 'Aug 15 2025'
-heroImage: '/blog/honeypot-forms.jpg'
+heroImage: 'img/blog/honeypots-in-web-forms.png'
 ---
 
 # Honeypots in Web Forms: A Simple Strategy Against Spam
