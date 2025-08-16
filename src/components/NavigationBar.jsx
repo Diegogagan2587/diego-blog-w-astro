@@ -66,9 +66,7 @@ const NavigationBar = ({ scrollToSection, site }) => {
         <li>
           <a
             className="cursor-pointer"
-            onClick={() => {
-              handleNavigationClick('portfolioRef');
-            }}
+            href='https://dvloper-z.com'
           >
             Portfolio
           </a>
@@ -76,9 +74,7 @@ const NavigationBar = ({ scrollToSection, site }) => {
         <li>
           <a
             className="cursor-pointer"
-            onClick={() => {
-              handleNavigationClick('aboutRef');
-            }}
+            href='https://dvloper-z.com/#:~:text=See%20Project-,About%20Myself,-Navigating%20from%20childhood'
           >
             About
           </a>
@@ -86,15 +82,13 @@ const NavigationBar = ({ scrollToSection, site }) => {
         <li>
           <a
             className="cursor-pointer"
-            onClick={() => {
-              handleNavigationClick('contactRef');
-            }}
+           href="https://dvloper-z.com/#:~:text=Constructive%20feedback-,Contact%20me,-If%20you%20have"
           >
             Contact
           </a>
         </li>
         <li>
-          <a className="cursor-pointer" href="/blog">
+          <a className="cursor-pointer" href="/">
             Blog
           </a>
         </li>
