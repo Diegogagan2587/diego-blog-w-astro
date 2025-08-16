@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import Btn from '../components/Btn';
-import Skills from '../components/Skills';
+import Skills from '../components/Skills.jsx';
 import SocialMediaBar from '../components/SocialMediaBar';
 
 const AboutSection = ({sectionRef, isActive}) => {
