@@ -69,7 +69,9 @@ const NavigationBar = (props) => {
         <li>
           <a
             className="cursor-pointer"
-            href='https://dvloper-z.com'
+            onClick={() => {
+              handleNavigationClick('portfolioRef');
+            }}
           >
             Portfolio
           </a>
@@ -77,7 +79,9 @@ const NavigationBar = (props) => {
         <li>
           <a
             className="cursor-pointer"
-            href='https://dvloper-z.com/#:~:text=See%20Project-,About%20Myself,-Navigating%20from%20childhood'
+            onClick={() => {
+              handleNavigationClick('aboutRef');
+            }}
           >
             About
           </a>
@@ -85,13 +89,15 @@ const NavigationBar = (props) => {
         <li>
           <a
             className="cursor-pointer"
-           href="https://dvloper-z.com/#:~:text=Constructive%20feedback-,Contact%20me,-If%20you%20have"
+            onClick={() => {
+              handleNavigationClick('contactRef');
+            }}
           >
             Contact
           </a>
         </li>
         <li>
-          <a className="cursor-pointer" href="/">
+          <a className="cursor-pointer" href="/blog">
             Blog
           </a>
         </li>
