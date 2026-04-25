@@ -2,7 +2,8 @@ import { useState, useEffect } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faX, faBars } from '@fortawesome/free-solid-svg-icons';
 
-const NavigationBar = ({ scrollToSection, site }) => {
+const NavigationBar = (props) => {
+  const { scrollToSection } = props;
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [currentPage, setCurrentPage] = useState('');
 
@@ -19,14 +20,16 @@ const NavigationBar = ({ scrollToSection, site }) => {
   };
 
   const handleNavigationClick = (sectionId) => {
-    if (currentPage === '/') {
+    if (currentPage === '/' && typeof scrollToSection === 'function') {
       // If on the homepage, scroll to section
       scrollToSection(sectionId);
     } else {
       // If not on homepage, navigate to section with hash
       window.location.href = `/#${sectionId}`;
     }
-    handleMenuClick(); // Close the menu if it's open
+    if (isMenuOpen) {
+      handleMenuClick();
+    }
   };
 
   return (

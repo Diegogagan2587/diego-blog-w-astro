@@ -37,7 +37,7 @@ const ProjectCard = ({ project, index, isActive }) => {
       <div
         id={`project-card-${index}`}
         className={`
-          card bg-white border-2 hover:border-[#A7AEFF] rounded-xl p-4 
+          card portfolio-card bg-white border-2 border-[#DFE1E6] hover:border-[#A7AEFF] rounded-xl p-4 
           flex flex-col ${desktopFlexDirection} gap-3 md:aspect-[145/62] 
           hover:scale-105 hover:shadow-xl transition-all duration-500 ease-in-out 
           max-w-[343px] md:max-w-[1156px] md:max-h-[496px] lg:overflow-hidden 
@@ -50,7 +50,7 @@ const ProjectCard = ({ project, index, isActive }) => {
           className="
             container bg-slate-100 sm:overflow-hidden flex items-center justify-center 
             md:max-h-[448px] w-full md:w-1/2 min-w-[295px] min-h-[220px] md:min-w-[220px] 
-            rounded-md border-2
+            rounded-md border-2 border-[#DFE1E6]
           "
         >
           <img

@@ -7,7 +7,7 @@ const ContactForm = ({sectionRef}) => {
         id="contact"
         className="bg-[url('/background-form-mobile-react.svg')] bg-no-repeat bg-contain bg-right
         md:bg-[url('/background-form-desktop-react.svg')] md:bg-no-repeat md:bg-contain md:bg-center
-        border-2 rounded-tl-[68px] bg-[#6070FF] min-h-screen px-6 pt-24 flex justify-center items-center"
+        border-2 rounded-tl-[68px] bg-[#6070FF] min-h-screen px-6 pt-24 flex justify-center items-center contact-me-container"
       >
         <div className='flex flex-col sm:max-w-[801px] sm:max-h-[577px] gap-3 md:px-[177px]'>
         <h2 className="font-bold text-4xl text-center text-white">
@@ -15,7 +15,7 @@ const ContactForm = ({sectionRef}) => {
           Contact me
           </span>
         </h2>
-        <p className="text-xl leading-7 text-center text-[#EBEBFF]">
+        <p className="text-xl leading-7 text-center text-[#F5F5F5]">
           If you have an application you are interested in developing, a feature
           that you need built or a project that needs coding. I’d love to help
           with it!.
