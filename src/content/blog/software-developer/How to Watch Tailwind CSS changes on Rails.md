@@ -2,7 +2,7 @@
 title: How to Watch Tailwind CSS changes on Rails
 description: Brief descritpon on how to manually run tailwind css watcher process and how to include it on a proces file on rails.
 pubDate: 2026-04-26
-heroImage: /blog-placeholder-2.jpg
+heroImage: /img/blog/rails-tailwind-watch-hero.svg
 ---
 Once you have installed tailwind CSS in your [[Ruby On Rails]] project, you can run the command below to refresh(or something like that) any change in CSS, so then you can go to the browser and refers and see your changes on styles.
 
