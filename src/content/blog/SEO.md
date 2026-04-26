@@ -1,8 +1,8 @@
 ---
-title: 'Some SEO Notes'
-description: 'Lorem ipsum dolor sit amet'
-pubDate: 'Jul 22 2022'
-heroImage: '/blog-placeholder-2.jpg'
+title: Buenas Practicas SEO en astro
+description: Consejos y puntos a seguir al escribir articulos para un  mejor SEO en Astro
+pubDate: 2024-07-22
+heroImage: /blog-placeholder-2.jpg
 ---
 
 ## 6. Buenas prácticas SEO para tu proyecto Astro
