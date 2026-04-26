@@ -91,11 +91,8 @@ Inside `psql`:
 You should see:
 
 - database: your username
-    
 - user: your username
-    
 - via local socket
-    
 
 Exit:
 
@@ -108,15 +105,10 @@ Exit:
 ## 6️⃣ Node.js / Rails / Sequelize / Prisma ready
 
 From here:
-
 - Node + `pg` → works
-    
 - Rails → works
-    
 - Prisma → works
-    
 - Docker later → also works
-    
 
 This setup matches **The Odin Project’s intent**, just without Ubuntu hand-holding.
 
@@ -125,13 +117,9 @@ This setup matches **The Odin Project’s intent**, just without Ubuntu hand-hol
 ## Common Arch Gotchas (read this once, save 2 hours later)
 
 - ❌ Forgot `initdb`
-    
 - ❌ PostgreSQL service not running
-    
 - ❌ Trying to connect as `root`
-    
 - ❌ Editing `pg_hba.conf` before understanding it
-    
 
 If you didn’t touch `pg_hba.conf` yet — good. Don’t.
 
