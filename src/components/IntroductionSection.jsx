@@ -57,15 +57,12 @@ const IntroductionSection = ({sectionRef, isActive}) => {
           transition-transform ease-in-out duration-500 delay-100
           `}
           >
-            I can help you turn designs into functional single-page
-            applications, craft Server Side Rendering Websites, and develop
-            powerful APIs—from code creation to deployment. Using JavaScript,
-            React, Redux, Tailwind-CSS, Ruby on Rails, PostgreSQL, and more. I
-            bring over 2,500 hours of hands-on experience in building, testing,
-            and debugging software.
-            Explore my work below or reach out through the Contact
-            Section to discuss how I can contribute to your projects. I&apos;m
-            ready to answer any questions you may have!
+            Full-stack developer with strong experience in Rails, APIs, 
+            and data workflows. I create internal systems, dashboards, and integrations
+            that replace manual tasks and improve efficiency. I work with React, Tailwind,
+            PostgreSQL, and modern development practices—from building and testing
+            to debugging and deployment. 
+            No fluff—just practical software that solves real problems.
           </p>
         </div>
         <SocialMediaBar />
