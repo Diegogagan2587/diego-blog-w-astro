@@ -35,6 +35,8 @@ const Skills = () => {
               md:flex-row md:flex-wrap
               `}>
                 {skill.list.map((item,index) => {
+                  const isExternalLink = item.href ? /^(https?:)?\/\//.test(item.href) : false;
+
                   return (
                     <li
                      id={`skill-${index}`}
@@ -49,7 +51,18 @@ const Skills = () => {
                           className="w-full h-full object-cover rounded-full"
                         />
                       </div>
-                      <p className='font-medium text-[#253858]'>{item.name}</p>
+                      {item.href ? (
+                        <a
+                          href={item.href}
+                          className="font-medium text-[#253858] no-underline hover:text-[#6070FF] transition-colors"
+                          target={isExternalLink ? '_blank' : undefined}
+                          rel={isExternalLink ? 'noreferrer' : undefined}
+                        >
+                          {item.name}
+                        </a>
+                      ) : (
+                        <p className='font-medium text-[#253858]'>{item.name}</p>
+                      )}
                     </li>
                   );
                 })}

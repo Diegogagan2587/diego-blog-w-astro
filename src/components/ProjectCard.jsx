@@ -9,6 +9,30 @@ const ProjectCard = ({ project, index, isActive }) => {
   const [animate, setAnimate] = useState(false);
   const isPrivate = project.visibility === 'private';
 
+  const normalizedTechnologies = (project.technologies || []).map((technology, techIndex) => {
+    if (typeof technology === 'string') {
+      return { key: `${technology}-${techIndex}`, text: technology };
+    }
+
+    return {
+      key: `${technology.text || 'tech'}-${techIndex}`,
+      text: technology.text,
+      href: technology.href,
+    };
+  });
+
+  const normalizedBadges = (project.badges || []).map((badge, badgeIndex) => {
+    if (typeof badge === 'string') {
+      return { key: `${badge}-${badgeIndex}`, text: badge };
+    }
+
+    return {
+      key: `${badge.text || 'badge'}-${badgeIndex}`,
+      text: badge.text,
+      href: badge.href,
+    };
+  });
+
   const desktopFlexDirection = index % 2 === 0 ? 'md:flex-row' : 'md:flex-row-reverse';
 
   useEffect(() => {
@@ -85,6 +109,9 @@ const ProjectCard = ({ project, index, isActive }) => {
               <li>{project.typeOfDev}</li>
               <li>{project.date}</li>
             </ul>
+            {normalizedBadges.map((badge) => (
+              <Tag key={badge.key} text={badge.text} href={badge.href} />
+            ))}
             {isPrivate && (
               <span className="rounded-full bg-[#EBF0FF] px-3 py-1 text-xs font-bold uppercase tracking-wide text-[#396DF2]">
                 Private case study
@@ -105,8 +132,8 @@ const ProjectCard = ({ project, index, isActive }) => {
           </p>
 
           <ul className="flex flex-wrap gap-2">
-            {project.technologies.map((tech) => (
-              <Tag key={tech} text={tech} />
+            {normalizedTechnologies.map((technology) => (
+              <Tag key={technology.key} text={technology.text} href={technology.href} />
             ))}
           </ul>
 
