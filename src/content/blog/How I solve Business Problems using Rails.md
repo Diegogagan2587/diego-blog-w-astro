@@ -2,7 +2,7 @@
 title: How I solve Business Problems using Rails
 description: How I approach real business problems using Ruby on Rails — from automation and internal tools to scalable backend systems that improve efficiency and reduce operational costs.
 pubDate: 2026-04-25
-heroImage: /blog-placeholder-2.jpg
+heroImage: /img/blog/rails-business-problems-hero.svg
 slug: how-i-solve-business-problems-using-rails
 ---
 

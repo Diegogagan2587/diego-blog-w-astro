@@ -2,7 +2,7 @@
 title: how to install PostgreSQL on Arch similary to the oding project approach
 description: If you are used to follow The Odin project installatin guide for PostfreSQL, here is a version that follo similar approach on Arch Linux.
 pubDate: 2026-04-26
-heroImage: /blog-placeholder-2.jpg
+heroImage: /img/blog/postgresql-arch-install-hero.svg
 ---
 
 ##  1️⃣ Install PostgreSQL (Arch way, no magic)

@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+  <title id="title">Solving Business Problems with Rails</title>
+  <desc id="desc">An illustration of Ruby on Rails turning business needs into working software outcomes.</desc>
+
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="50%" stop-color="#1e293b"/>
+      <stop offset="100%" stop-color="#334155"/>
+    </linearGradient>
+    <linearGradient id="panel" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#111827"/>
+      <stop offset="100%" stop-color="#1f2937"/>
+    </linearGradient>
+    <linearGradient id="flow" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#fb7185"/>
+      <stop offset="100%" stop-color="#38bdf8"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <circle cx="180" cy="120" r="120" fill="#f43f5e" opacity="0.14"/>
+  <circle cx="1050" cy="520" r="180" fill="#0ea5e9" opacity="0.18"/>
+
+  <text x="70" y="96" fill="#f8fafc" font-family="'Segoe UI', Tahoma, sans-serif" font-size="48" font-weight="700">
+    How I Solve Business Problems
+  </text>
+  <text x="70" y="136" fill="#cbd5e1" font-family="'Segoe UI', Tahoma, sans-serif" font-size="28" font-weight="500">
+    using Ruby on Rails
+  </text>
+
+  <g transform="translate(70 190)">
+    <rect x="0" y="0" width="320" height="300" rx="18" fill="url(#panel)" stroke="#475569" stroke-width="2"/>
+    <text x="24" y="46" fill="#fda4af" font-family="'Segoe UI', Tahoma, sans-serif" font-size="22" font-weight="700">Business Needs</text>
+    <rect x="24" y="72" width="272" height="48" rx="10" fill="#1f2937"/>
+    <text x="40" y="102" fill="#e2e8f0" font-family="'Segoe UI', Tahoma, sans-serif" font-size="18">Manual workflows</text>
+    <rect x="24" y="132" width="272" height="48" rx="10" fill="#1f2937"/>
+    <text x="40" y="162" fill="#e2e8f0" font-family="'Segoe UI', Tahoma, sans-serif" font-size="18">Operational bottlenecks</text>
+    <rect x="24" y="192" width="272" height="48" rx="10" fill="#1f2937"/>
+    <text x="40" y="222" fill="#e2e8f0" font-family="'Segoe UI', Tahoma, sans-serif" font-size="18">Disconnected data</text>
+  </g>
+
+  <g transform="translate(440 220)">
+    <rect x="0" y="0" width="320" height="240" rx="20" fill="#0b1220" stroke="#64748b" stroke-width="2"/>
+    <text x="28" y="46" fill="#fecdd3" font-family="'Segoe UI', Tahoma, sans-serif" font-size="26" font-weight="700">Rails Engine</text>
+    <text x="28" y="84" fill="#93c5fd" font-family="monospace" font-size="19">models + services + jobs</text>
+    <rect x="28" y="108" width="264" height="18" rx="9" fill="#ef4444" opacity="0.85"/>
+    <rect x="28" y="140" width="206" height="18" rx="9" fill="#f97316" opacity="0.85"/>
+    <rect x="28" y="172" width="246" height="18" rx="9" fill="#22d3ee" opacity="0.85"/>
+  </g>
+
+  <g transform="translate(810 190)">
+    <rect x="0" y="0" width="320" height="300" rx="18" fill="url(#panel)" stroke="#475569" stroke-width="2"/>
+    <text x="24" y="46" fill="#7dd3fc" font-family="'Segoe UI', Tahoma, sans-serif" font-size="22" font-weight="700">Business Outcomes</text>
+    <rect x="24" y="72" width="272" height="48" rx="10" fill="#1f2937"/>
+    <text x="40" y="102" fill="#e2e8f0" font-family="'Segoe UI', Tahoma, sans-serif" font-size="18">Automated processes</text>
+    <rect x="24" y="132" width="272" height="48" rx="10" fill="#1f2937"/>
+    <text x="40" y="162" fill="#e2e8f0" font-family="'Segoe UI', Tahoma, sans-serif" font-size="18">Faster team decisions</text>
+    <rect x="24" y="192" width="272" height="48" rx="10" fill="#1f2937"/>
+    <text x="40" y="222" fill="#e2e8f0" font-family="'Segoe UI', Tahoma, sans-serif" font-size="18">Lower operational cost</text>
+  </g>
+
+  <path d="M395 340 C425 340, 430 340, 438 340" stroke="url(#flow)" stroke-width="8" stroke-linecap="round" fill="none"/>
+  <polygon points="438,340 420,328 420,352" fill="#fb7185"/>
+  <path d="M764 340 C792 340, 798 340, 806 340" stroke="url(#flow)" stroke-width="8" stroke-linecap="round" fill="none"/>
+  <polygon points="806,340 788,328 788,352" fill="#38bdf8"/>
+</svg>
