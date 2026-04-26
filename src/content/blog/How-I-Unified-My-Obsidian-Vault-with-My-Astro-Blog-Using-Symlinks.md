@@ -131,7 +131,6 @@ Obsidian supports this natively.
 - **Templater** → standardize blog structure
 
 You can even track:
-
 - Drafts
 - Published posts
 - Content pipelines
@@ -194,7 +193,9 @@ If Obsidian doesn’t show files:
 - Ensure symlinks are supported on your system
 
 ---
-
+## Enabling Wiki Links
+To enable wiki links, you can install Braind DB
+https://astro-digital-garden.stereobooster.com/recipes/wikilinks/
 ## 🚀 Why This Matters
 
 This isn’t just about tooling.
