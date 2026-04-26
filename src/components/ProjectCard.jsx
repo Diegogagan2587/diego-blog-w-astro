@@ -7,6 +7,7 @@ import PopUp from './PopUp';
 const ProjectCard = ({ project, index, isActive }) => {
   const [popUp, setPopUp] = useState(false);
   const [animate, setAnimate] = useState(false);
+  const isPrivate = project.visibility === 'private';
 
   const desktopFlexDirection = index % 2 === 0 ? 'md:flex-row' : 'md:flex-row-reverse';
 
@@ -50,15 +51,15 @@ const ProjectCard = ({ project, index, isActive }) => {
           className="
             container bg-slate-100 sm:overflow-hidden flex items-center justify-center 
             md:max-h-[448px] w-full md:w-1/2 min-w-[295px] min-h-[220px] md:min-w-[220px] 
-            rounded-md border-2 border-[#DFE1E6]
+            rounded-md border-2 border-[#DFE1E6] p-3 md:p-4
           "
         >
           <img
             src={project.img}
             alt={`Screenshot of ${project.name}`}
             className={`
-              object-cover sm:object-contain justify-center items-center 
-              w-full h-full rounded-lg 
+                object-contain block mx-auto my-auto
+                w-full h-full max-w-full max-h-full rounded-lg
               ${animate ? 'transform translate-y-0' : 'transform translate-y-full'} 
               transition-transform ease-in-out duration-500
             `}
@@ -78,12 +79,17 @@ const ProjectCard = ({ project, index, isActive }) => {
             {project.name}
           </h5>
 
-          <div className="flex items-center py-2 font-semibold text-sm">
+          <div className="flex flex-wrap items-center gap-2 py-2 font-semibold text-sm">
             <span className="text-[#344563]">{project.company}</span>
             <ul className="flex list-disc gap-7 text-[#7A869A] pl-5">
               <li>{project.typeOfDev}</li>
               <li>{project.date}</li>
             </ul>
+            {isPrivate && (
+              <span className="rounded-full bg-[#EBF0FF] px-3 py-1 text-xs font-bold uppercase tracking-wide text-[#396DF2]">
+                Private case study
+              </span>
+            )}
           </div>
 
           <p className="card-text text-[#344563]">{project.description}</p>
@@ -95,7 +101,7 @@ const ProjectCard = ({ project, index, isActive }) => {
           </ul>
 
           <div>
-            <Btn text="See Project" onClick={handlePopUp} />
+            <Btn text={isPrivate ? 'View Case Study' : 'See Project'} onClick={handlePopUp} />
           </div>
         </div>
       </div>
