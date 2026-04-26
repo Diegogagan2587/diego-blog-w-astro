@@ -45,7 +45,11 @@ const skills = [
         list: [
             {name:'React', icon:reactIcon },
             {name:'Redux', icon:reduxIcon },
-            {name:'Ruby on Rails', icon:railsIcon },
+            {
+                name:'Ruby on Rails',
+                icon:railsIcon,
+                href: '/how-i-solve-business-problems-using-rails/',
+            },
             {name:'Tailwind CSS', icon:Tailwind },
         ],
     },

@@ -26,7 +26,10 @@ const projects = [
       'This private production system focused on internal dashboard work for reviewing operational activity and performance. I contributed to data synchronization, filtering, debugging, and production support so teams could understand records more quickly. The public version of this case study intentionally omits source code, live links, client names, and proprietary workflows.',
     img: '/img/case-studies/operational-analytics-dashboard.svg',
     technologies: [
-      'Ruby on Rails',
+      {
+        text: 'Ruby on Rails',
+        href: '/how-i-solve-business-problems-using-rails/',
+      },
       'PostgreSQL',
       'Tailwind CSS',
       'APIs',
@@ -94,8 +97,14 @@ const projects = [
       'Javascript',
       'React',
       'Redux',
-      'Ruby',
-      'Rails',
+      {
+        text: 'Ruby',
+        href: '/how-i-solve-business-problems-using-rails/',
+      },
+      {
+        text: 'Rails',
+        href: '/how-i-solve-business-problems-using-rails/',
+      },
       'PostgreSQL',
     ],
   },

@@ -8,6 +8,30 @@ const SeeCodeIcon = '/see-source-icoin.png';
 const PopUp = ({ project, handlePopUp }) => {
   const isPrivate = project.visibility === 'private';
 
+  const normalizedTechnologies = (project.technologies || []).map((technology, techIndex) => {
+    if (typeof technology === 'string') {
+      return { key: `${technology}-${techIndex}`, text: technology };
+    }
+
+    return {
+      key: `${technology.text || 'tech'}-${techIndex}`,
+      text: technology.text,
+      href: technology.href,
+    };
+  });
+
+  const normalizedBadges = (project.badges || []).map((badge, badgeIndex) => {
+    if (typeof badge === 'string') {
+      return { key: `${badge}-${badgeIndex}`, text: badge };
+    }
+
+    return {
+      key: `${badge.text || 'badge'}-${badgeIndex}`,
+      text: badge.text,
+      href: badge.href,
+    };
+  });
+
   return (
     <div
       id="pop-up-background"
@@ -35,6 +59,9 @@ const PopUp = ({ project, handlePopUp }) => {
               <li>{project.typeOfDev}</li>
               <li>{project.date}</li>
             </ul>
+            {normalizedBadges.map((badge) => (
+              <Tag key={badge.key} text={badge.text} href={badge.href} />
+            ))}
             {isPrivate && (
               <span className="rounded-full bg-[#EBF0FF] px-3 py-1 text-xs font-bold uppercase tracking-wide text-[#396DF2]">
                 Private case study
@@ -56,8 +83,8 @@ const PopUp = ({ project, handlePopUp }) => {
           <p className="text-[#344563] leading-7">{project.descriptionDesk}</p>
           <div className="flex flex-col gap-4">
             <div className="flex flex-wrap gap-2">
-              {project.technologies.map((technology) => (
-                <Tag key={technology} text={technology} />
+              {normalizedTechnologies.map((technology) => (
+                <Tag key={technology.key} text={technology.text} href={technology.href} />
               ))}
             </div>
             {isPrivate ? (
@@ -90,7 +117,24 @@ PopUp.propTypes = {
     date: PropTypes.string.isRequired,
     img: PropTypes.string.isRequired,
     descriptionDesk: PropTypes.string.isRequired,
-    technologies: PropTypes.arrayOf(PropTypes.string).isRequired,
+    technologies: PropTypes.arrayOf(
+      PropTypes.oneOfType([
+        PropTypes.string,
+        PropTypes.shape({
+          text: PropTypes.string.isRequired,
+          href: PropTypes.string,
+        }),
+      ]),
+    ).isRequired,
+    badges: PropTypes.arrayOf(
+      PropTypes.oneOfType([
+        PropTypes.string,
+        PropTypes.shape({
+          text: PropTypes.string.isRequired,
+          href: PropTypes.string,
+        }),
+      ]),
+    ),
     visibility: PropTypes.string,
     liveVersion: PropTypes.string,
     source: PropTypes.string,
