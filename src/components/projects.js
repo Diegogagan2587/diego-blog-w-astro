@@ -55,27 +55,27 @@ const projects = [
       'Debugging',
     ],
   },
-  {
-    name: 'Webhook Routing & Event Processing',
-    company: 'Professional Experience',
-    typeOfDev: 'Backend',
-    date: '2025',
-    visibility: 'private',
-    description:
-      'Worked on backend services that process incoming events and keep internal systems synchronized through webhook-based integrations.',
-    descriptionDesk:
-      'This private case study covers backend integration work that received external events and routed them to the correct internal systems. The work included validating event delivery, debugging synchronization issues, and ensuring downstream dashboards received the expected data. The original system is private, so the public version focuses on scope and outcomes rather than proprietary implementation details.',
-    img: '/img/case-studies/webhook-event-routing.svg',
-    technologies: [
-      'Ruby on Rails',
-      'Webhooks',
-      'APIs',
-      'PostgreSQL',
-      'Backend Services',
-      'Integrations',
-      'Event Processing',
-    ],
-  },
+  //{
+  //   name: 'Webhook Routing & Event Processing',
+  //   company: 'Professional Experience',
+  //   typeOfDev: 'Backend',
+  //   date: '2025',
+  //   visibility: 'private',
+  //   description:
+  //     'Worked on backend services that process incoming events and keep internal systems synchronized through webhook-based integrations.',
+  //   descriptionDesk:
+  //     'This private case study covers backend integration work that received external events and routed them to the correct internal systems. The work included validating event delivery, debugging synchronization issues, and ensuring downstream dashboards received the expected data. The original system is private, so the public version focuses on scope and outcomes rather than proprietary implementation details.',
+  //   img: '/img/case-studies/webhook-event-routing.svg',
+  //   technologies: [
+  //     'Ruby on Rails',
+  //     'Webhooks',
+  //     'APIs',
+  //     'PostgreSQL',
+  //     'Backend Services',
+  //     'Integrations',
+  //     'Event Processing',
+  //   ],
+  // },
   {
     name: 'Book a Concert',
     company: 'Self-employed',
