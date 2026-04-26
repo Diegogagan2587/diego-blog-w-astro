@@ -9,7 +9,7 @@ slug: how-i-solve-business-problems-using-rails
 Rails follows a phylosophy called convention over configuration, wich in short terms means that you don't have to think on how to structure yourr projects, wich names you should use for your files, or wich libraries you should use to connect the DB to your application. more time working on bussness problesm, lest time configuring boring stuff. This is very important when you are working on Very fast paced places like startups, or with customers that requires speed on delivery.
 
 **When I do not use rails?**
-When the product is the Front-end itself, and the UX/UI migh manage complex states, then I would probably opt for another tool as React. I mostly don't focues on having a unique orignal stylle, but instead on having a fast created using re-used componets ux so we can focuse on busines rules and solving business problems.
+When the product is the Front-end itself, and the UX/UI migh manage complex states, then I would probably opt for another tool as React (and still use Rails for Back-end). I mostly don't focus on having a unique original style, but instead on having a fast created using re-used components ux so we can focus on business rules and solving business problems.
 
 ## For Building APIs
 Rails is a Full-Stack framworkd, but you can initialize a project on API mode. even if you only shoose Api mode or you install alll gems, modeling relations, and bulding, and migrating the DB is way easier with the Rails ORM (ActiveRecord). You can have Simple API in a matter of a few hours.
@@ -25,7 +25,6 @@ Rails is so easy to read that writing integrations feels amazing. performance is
 Again, we do have the Active Job + Solid Que combination super useful to trigger actions.
 
 ## AI Assistance
-Rails requires less lines of code to write an read, so it might be more token efficient to write Projects on rails
-s
+Rails requires less lines of code to write an read, so it might be more token efficient to write Projects on rails.
 
 
