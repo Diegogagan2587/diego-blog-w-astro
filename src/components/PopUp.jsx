@@ -44,12 +44,12 @@ const PopUp = ({ project, handlePopUp }) => {
         </div>
         <div
           id="pop-up-img-frame"
-          className="w-full bg-slate-100 min-h-[220px] md:min-h-[320px] rounded-lg overflow-hidden"
+          className="w-full bg-slate-100 min-h-[220px] md:min-h-[320px] rounded-lg overflow-hidden flex items-center justify-center p-4 md:p-6"
         >
           <img
             src={project.img}
             alt={`Screenshot of ${project.name}`}
-            className="object-cover w-full h-full"
+            className="object-contain block w-auto h-auto max-w-full max-h-full"
           />
         </div>
         <div id="pop-up-body" className="flex flex-col gap-4 md:grid md:grid-cols-[1.6fr_1fr] md:items-start">

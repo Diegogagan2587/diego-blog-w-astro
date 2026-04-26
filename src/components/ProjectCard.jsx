@@ -59,7 +59,7 @@ const ProjectCard = ({ project, index, isActive }) => {
             alt={`Screenshot of ${project.name}`}
             className={`
                 object-contain block mx-auto my-auto
-                w-full h-full max-w-full max-h-full rounded-lg
+                w-auto h-auto max-w-full max-h-full rounded-lg
               ${animate ? 'transform translate-y-0' : 'transform translate-y-full'} 
               transition-transform ease-in-out duration-500
             `}
