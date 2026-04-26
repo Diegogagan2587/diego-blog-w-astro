@@ -140,17 +140,3 @@ exit
 psql
 ```
 
----
-
-If you want:
-
-- password auth
-    
-- multiple DB users
-    
-- Docker-friendly setup
-    
-- or matching this to **Rails conventions** (which you _will_ care about)
-    
-
-say the word and we’ll level it up 🚀
