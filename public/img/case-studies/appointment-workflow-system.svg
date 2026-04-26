@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" role="img" aria-label="Abstract scheduling workflow illustration">
+  <rect width="1200" height="800" rx="40" fill="#f4f5f7"/>
+  <rect x="80" y="80" width="1040" height="640" rx="32" fill="#172b4d"/>
+  <rect x="160" y="150" width="250" height="38" rx="19" fill="#ffffff" opacity="0.9"/>
+  <rect x="160" y="230" width="300" height="240" rx="28" fill="#6070ff"/>
+  <rect x="530" y="230" width="300" height="240" rx="28" fill="#f5f5f5" opacity="0.16"/>
+  <rect x="900" y="230" width="140" height="240" rx="28" fill="#f5f5f5" opacity="0.16"/>
+  <rect x="190" y="270" width="220" height="18" rx="9" fill="#ffffff" opacity="0.9"/>
+  <rect x="190" y="315" width="180" height="18" rx="9" fill="#ffffff" opacity="0.8"/>
+  <rect x="190" y="360" width="150" height="18" rx="9" fill="#ffffff" opacity="0.7"/>
+  <circle cx="680" cy="350" r="76" fill="#ffffff" opacity="0.9"/>
+  <path d="M640 350h80" stroke="#6070ff" stroke-width="14" stroke-linecap="round"/>
+  <path d="M680 310v80" stroke="#6070ff" stroke-width="14" stroke-linecap="round"/>
+  <rect x="940" y="280" width="60" height="60" rx="18" fill="#ffffff" opacity="0.9"/>
+  <rect x="940" y="360" width="60" height="60" rx="18" fill="#ffffff" opacity="0.7"/>
+  <rect x="160" y="540" width="880" height="34" rx="17" fill="#ffffff" opacity="0.2"/>
+</svg>

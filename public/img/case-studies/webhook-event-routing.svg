@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" role="img" aria-label="Abstract integrations illustration">
+  <rect width="1200" height="800" rx="40" fill="#f4f5f7"/>
+  <rect x="80" y="80" width="1040" height="640" rx="32" fill="#ffffff"/>
+  <rect x="160" y="180" width="220" height="120" rx="26" fill="#6070ff"/>
+  <rect x="490" y="180" width="220" height="120" rx="26" fill="#2230d2"/>
+  <rect x="820" y="180" width="220" height="120" rx="26" fill="#172b4d"/>
+  <rect x="290" y="460" width="620" height="120" rx="26" fill="#f4f5f7"/>
+  <circle cx="270" cy="520" r="40" fill="#6070ff"/>
+  <circle cx="600" cy="520" r="40" fill="#2230d2"/>
+  <circle cx="930" cy="520" r="40" fill="#172b4d"/>
+  <path d="M380 240h110" stroke="#f4f5f7" stroke-width="12" stroke-linecap="round"/>
+  <path d="M710 240h110" stroke="#f4f5f7" stroke-width="12" stroke-linecap="round"/>
+  <path d="M270 520h260" stroke="#6070ff" stroke-width="12" stroke-linecap="round"/>
+  <path d="M640 520h260" stroke="#2230d2" stroke-width="12" stroke-linecap="round"/>
+  <rect x="160" y="650" width="880" height="22" rx="11" fill="#172b4d" opacity="0.12"/>
+</svg>

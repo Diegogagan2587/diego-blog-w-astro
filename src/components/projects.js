@@ -15,6 +15,68 @@ const budgetApp = '/budget-app-live-demo.png';
 
 const projects = [
   {
+    name: 'Operational Analytics Dashboard',
+    company: 'Professional Experience',
+    typeOfDev: 'Full-stack',
+    date: '2025',
+    visibility: 'private',
+    description:
+      'Built dashboard features to help teams review operational data, monitor activity, and make faster decisions across business workflows.',
+    descriptionDesk:
+      'This private production system focused on internal dashboard work for reviewing operational activity and performance. I contributed to data synchronization, filtering, debugging, and production support so teams could understand records more quickly. The public version of this case study intentionally omits source code, live links, client names, and proprietary workflows.',
+    img: '/img/case-studies/operational-analytics-dashboard.svg',
+    technologies: [
+      'Ruby on Rails',
+      'PostgreSQL',
+      'Tailwind CSS',
+      'APIs',
+      'Data Sync',
+      'Debugging',
+    ],
+  },
+  {
+    name: 'Appointment Scheduling Workflow System',
+    company: 'Professional Experience',
+    typeOfDev: 'Full-stack',
+    date: '2025',
+    visibility: 'private',
+    description:
+      'Worked on scheduling workflows that validate availability, collect required data, and connect with external systems to register appointments.',
+    descriptionDesk:
+      'This case study represents professional work on appointment scheduling workflows for service operations. The system handled availability, required fields, fallback paths, and external API communication. My role included validating flows, testing edge cases, improving messages, and making scheduling behavior more reliable. The public summary intentionally stays abstract to protect private implementation details.',
+    img: '/img/case-studies/appointment-workflow-system.svg',
+    technologies: [
+      'Ruby on Rails',
+      'APIs',
+      'Scheduling Logic',
+      'PostgreSQL',
+      'Workflow Design',
+      'Testing',
+      'Debugging',
+    ],
+  },
+  //{
+  //   name: 'Webhook Routing & Event Processing',
+  //   company: 'Professional Experience',
+  //   typeOfDev: 'Backend',
+  //   date: '2025',
+  //   visibility: 'private',
+  //   description:
+  //     'Worked on backend services that process incoming events and keep internal systems synchronized through webhook-based integrations.',
+  //   descriptionDesk:
+  //     'This private case study covers backend integration work that received external events and routed them to the correct internal systems. The work included validating event delivery, debugging synchronization issues, and ensuring downstream dashboards received the expected data. The original system is private, so the public version focuses on scope and outcomes rather than proprietary implementation details.',
+  //   img: '/img/case-studies/webhook-event-routing.svg',
+  //   technologies: [
+  //     'Ruby on Rails',
+  //     'Webhooks',
+  //     'APIs',
+  //     'PostgreSQL',
+  //     'Backend Services',
+  //     'Integrations',
+  //     'Event Processing',
+  //   ],
+  // },
+  {
     name: 'Book a Concert',
     company: 'Self-employed',
     typeOfDev: 'Full-stack',

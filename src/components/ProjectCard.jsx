@@ -39,7 +39,7 @@ const ProjectCard = ({ project, index, isActive }) => {
         id={`project-card-${index}`}
         className={`
           card portfolio-card bg-white border-2 border-[#DFE1E6] hover:border-[#A7AEFF] rounded-xl p-4 
-          flex flex-col ${desktopFlexDirection} gap-3 md:aspect-[145/62] 
+          w-full flex flex-col ${desktopFlexDirection} gap-3 md:aspect-[145/62] 
           hover:scale-105 hover:shadow-xl transition-all duration-500 ease-in-out 
           max-w-[343px] md:max-w-[1156px] md:max-h-[496px] lg:overflow-hidden 
           opacity-0 ${animate ? 'opacity-100' : ''} 
@@ -50,10 +50,10 @@ const ProjectCard = ({ project, index, isActive }) => {
           id="project-img"
           className="
             container bg-slate-100 sm:overflow-hidden flex items-center justify-center 
-            md:max-h-[448px] w-full md:w-1/2 min-w-[295px] min-h-[220px] md:min-w-[220px] 
+            md:max-h-[448px] w-full md:w-1/2 min-w-0 min-h-[220px] 
             rounded-md border-2 border-[#DFE1E6] p-3 md:p-4
           "
-        >
+        > 
           <img
             src={project.img}
             alt={`Screenshot of ${project.name}`}
@@ -69,19 +69,19 @@ const ProjectCard = ({ project, index, isActive }) => {
         <div
           id="project-info"
           className={`
-            card-body flex flex-col gap-3 md:p-6 
-            min-w-[295px] sm:min-w-auto sm:w-1/2 min-h-[288px] 
+              card-body flex flex-col gap-3 md:p-6
+              w-full md:w-1/2 min-w-0 min-h-[288px] flex-1
             ${animate ? 'transform translate-y-0' : 'transform translate-y-full'} 
             transition-transform ease-in-out duration-500
           `}
         >
-          <h5 className="card-title font-bold text-3xl text-[#172B4D]">
+          <h5 className="card-title font-bold text-3xl text-[#172B4D] break-words">
             {project.name}
           </h5>
 
           <div className="flex flex-wrap items-center gap-2 py-2 font-semibold text-sm">
             <span className="text-[#344563]">{project.company}</span>
-            <ul className="flex list-disc gap-7 text-[#7A869A] pl-5">
+            <ul className="flex flex-wrap list-disc gap-7 text-[#7A869A] pl-5">
               <li>{project.typeOfDev}</li>
               <li>{project.date}</li>
             </ul>
@@ -92,7 +92,17 @@ const ProjectCard = ({ project, index, isActive }) => {
             )}
           </div>
 
-          <p className="card-text text-[#344563]">{project.description}</p>
+          <p
+            className="card-text text-[#344563]"
+            style={{
+              display: '-webkit-box',
+              WebkitBoxOrient: 'vertical',
+              WebkitLineClamp: 3,
+              overflow: 'hidden',
+            }}
+          >
+            {project.description}
+          </p>
 
           <ul className="flex flex-wrap gap-2">
             {project.technologies.map((tech) => (
@@ -100,7 +110,7 @@ const ProjectCard = ({ project, index, isActive }) => {
             ))}
           </ul>
 
-          <div>
+          <div className="mt-auto">
             <Btn text={isPrivate ? 'View Case Study' : 'See Project'} onClick={handlePopUp} />
           </div>
         </div>
