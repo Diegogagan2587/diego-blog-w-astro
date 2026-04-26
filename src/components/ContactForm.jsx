@@ -7,9 +7,9 @@ const ContactForm = ({sectionRef}) => {
         id="contact"
         className="bg-[url('/background-form-mobile-react.svg')] bg-no-repeat bg-contain bg-right
         md:bg-[url('/background-form-desktop-react.svg')] md:bg-no-repeat md:bg-contain md:bg-center
-        border-2 rounded-tl-[68px] bg-[#6070FF] min-h-screen px-6 pt-24 flex justify-center items-center contact-me-container"
+        border-2 rounded-tl-[68px] bg-[#6070FF] min-h-screen px-6 pt-24 pb-24 flex justify-center items-start contact-me-container"
       >
-        <div className='flex flex-col sm:max-w-[801px] sm:max-h-[577px] gap-3 md:px-[177px]'>
+        <div className='flex w-full max-w-[801px] flex-col gap-4 md:px-[177px]'>
         <h2 className="font-bold text-4xl text-center text-white">
           <span className='text-white'>
           Contact me
