@@ -38,7 +38,7 @@ const AboutSection = ({ sectionRef, isActive }) => {
           I’m a full-stack developer focused on building practical software 
           that improves how teams operate.
 
-          Over the past few years, I’ve worked on real-world systems involving APIs,
+          I’ve worked on real-world systems involving APIs,
           dashboards, and data workflows—helping turn manual processes into efficient,
           automated solutions.
 
