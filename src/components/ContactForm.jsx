@@ -16,10 +16,14 @@ const ContactForm = ({sectionRef}) => {
           </span>
         </h2>
         <p className="text-xl leading-7 text-center text-[#F5F5F5]">
-          If you have an application you are interested in developing, a feature
-          that you need built or a project that needs coding. I’d love to help
-          with it!.
-          contact me at <strong>diego27796gagan@gmail.com</strong> or fill out the form below.
+          If you’re looking to automate processes, build internal tools, or turn 
+          ideas into working software, I can help.
+
+          Whether it’s a dashboard, API, or a custom system to replace manual 
+          work—let’s talk and see how I can support your project.
+
+          Send me a message or reach out directly at: 
+          <strong>diego27796gagan@gmail.com</strong>  
         </p>
         <form action="https://formspree.io/f/mbjewygq" method="POST" className='flex flex-col gap-5'>
           <div className="form-group">
