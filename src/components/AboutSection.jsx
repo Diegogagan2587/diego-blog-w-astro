@@ -3,14 +3,14 @@ import Btn from '../components/Btn';
 import Skills from '../components/Skills.jsx';
 import SocialMediaBar from '../components/SocialMediaBar';
 
-const AboutSection = ({sectionRef, isActive}) => {
+const AboutSection = ({ sectionRef, isActive }) => {
   const [animate, setAnimate] = useState(false);
   useEffect(() => {
     setAnimate(false)
-      setTimeout(() => {
-        setAnimate(true)
-      }, 500);
-    
+    setTimeout(() => {
+      setAnimate(true)
+    }, 500);
+
   }, [isActive]);
 
   useEffect(() => {
@@ -35,20 +35,25 @@ const AboutSection = ({sectionRef, isActive}) => {
       `}>
         <h2 className="font-bold text-4xl text-[#172B4D]">About Myself</h2>
         <p className="text-[#344563]">
-          Navigating from childhood curiosity to full-stack web development, my
-          journey blends tenacity and learning. &quot;Questions and Answers&quot; ignited
-          my passion for understanding the world. At 16, I was guided by Dale
-          Carnegie&apos;s wisdom and committed to community fitness. Transitioning to
-          the software field, I dedicated 1.5 years to mastering
-          English by myself for remote work. Despite setbacks, including illness, I
-          embraced unfamiliar territories, showcasing adaptability and quick
-          learning. Remote work at a call center honed my language and
-          problem-solving skills. At Microverse, amidst delivering for Uber, I
-          mastered HTML, CSS, and Javascript, emerging as a resilient full-stack
-          web developer. My coding journey reflects a commitment to tech growth.
-          I&apos;m a passionate learner and achiever, fueled by curiosity and dedication
-          to innovation.<br/>
-          Fun-fact: when I was a child, I used to think that everyone spoke the same language.
+          I’m a full-stack developer focused on building practical software 
+          that improves how teams operate.
+
+          I’ve worked on real-world systems involving APIs,
+          dashboards, and data workflows—helping turn manual processes into efficient,
+          automated solutions.
+
+          My background isn’t traditional. I taught myself English to access global
+          opportunities, worked remotely in high-pressure environments, and developed
+          strong problem-solving skills along the way. That experience shaped 
+          how I approach software: with resilience, adaptability, and a focus on delivering results.
+
+          Today, I specialize in Ruby on Rails, JavaScript, and modern web technologies 
+          to build scalable backend systems and clean, usable interfaces. 
+          I care less about trends and more about creating software that actually 
+          works in production and solves real problems.
+
+          Fun fact: I grew up thinking everyone spoke the same language—turns out, 
+          learning a new one opened the door to my entire career.
         </p>
         <SocialMediaBar />
         <div>

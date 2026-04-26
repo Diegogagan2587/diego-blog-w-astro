@@ -7,19 +7,23 @@ const ContactForm = ({sectionRef}) => {
         id="contact"
         className="bg-[url('/background-form-mobile-react.svg')] bg-no-repeat bg-contain bg-right
         md:bg-[url('/background-form-desktop-react.svg')] md:bg-no-repeat md:bg-contain md:bg-center
-        border-2 rounded-tl-[68px] bg-[#6070FF] min-h-screen px-6 pt-24 flex justify-center items-center contact-me-container"
+        border-2 rounded-tl-[68px] bg-[#6070FF] min-h-screen px-6 pt-24 pb-24 flex justify-center items-start contact-me-container"
       >
-        <div className='flex flex-col sm:max-w-[801px] sm:max-h-[577px] gap-3 md:px-[177px]'>
+        <div className='flex w-full max-w-[801px] flex-col gap-4 md:px-[177px]'>
         <h2 className="font-bold text-4xl text-center text-white">
           <span className='text-white'>
           Contact me
           </span>
         </h2>
         <p className="text-xl leading-7 text-center text-[#F5F5F5]">
-          If you have an application you are interested in developing, a feature
-          that you need built or a project that needs coding. I’d love to help
-          with it!.
-          contact me at <strong>diego27796gagan@gmail.com</strong> or fill out the form below.
+          If you’re looking to automate processes, build internal tools, or turn 
+          ideas into working software, I can help.
+
+          Whether it’s a dashboard, API, or a custom system to replace manual 
+          work—let’s talk and see how I can support your project.
+
+          Send me a message or reach out directly at: 
+          <strong>diego27796gagan@gmail.com</strong>  
         </p>
         <form action="https://formspree.io/f/mbjewygq" method="POST" className='flex flex-col gap-5'>
           <div className="form-group">
