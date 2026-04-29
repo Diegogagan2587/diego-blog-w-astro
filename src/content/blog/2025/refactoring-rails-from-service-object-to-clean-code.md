@@ -21,7 +21,7 @@ When building real-world Rails apps, it’s common to hit the limits of traditio
 * Used in Rails itself (`ActiveStorage::Service.for`) and by trusted teams (like Thoughtbot).
 
 > **Example:**
-> `Nlpearl::ApiService.for(config)` → returns `InboundService` or `OutboundService` based on direction.
+> `MyComunicationPlatform::ApiService.for(config)` → returns `InboundService` or `OutboundService` based on direction.
 
 ---
 
