@@ -13,3 +13,11 @@ and other tools that might enhance the experience.
 
 Til today 2026 may 01 I'm just installed the gem and I do hope it will enhance the raiils view layer development experience
 see the [herb repositoriy on github](https://github.com/marcoroth/herb)
+
+As per Youtube video some enhancement we might notice:
+- CSS outline (so you can debug each file or partial)
+- Better template errores description
+- Abilitiy to jump right into the buggy view file.
+- Better view inpection on browswer
+
+As for me, a guy who has built his portfolio and blog in Astro, this have me exited as thease features are very similar to Astro, wich in my opinigon has great view debuggin.
