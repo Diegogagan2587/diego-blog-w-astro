@@ -10,7 +10,7 @@ interface Props {
 	image?: string;
 }
 
-const canonicalURL = new URL(Astro.url.pathname, Astro.site);
+const canonicalURL = new URL(Astro.url.pathname, Astro.site || 'https://dvloper-z.com');
 
 const { title, description, image = '/img/profile-picture.jpg' } = Astro.props;
 ---
