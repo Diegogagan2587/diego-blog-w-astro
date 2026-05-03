@@ -12,7 +12,29 @@ interface Props {
 
 const canonicalURL = new URL(Astro.url.pathname, Astro.site || 'https://dvloper-z.com');
 
-const { title, description, image = '/img/profile-picture.jpg' } = Astro.props;
+const { title, description, image = '/img/profile-picture.jpg', pubDate, updatedDate } = Astro.props;
+
+const schema = {
+	"@context": "https://schema.org",
+	"@type": "WebSite",
+	"name": title,
+	"url": Astro.site,
+	"description": description,
+	"author": {
+		"@type": "Person",
+		"name": "Diego Vidal",
+		"url": "https://github.com/Diegogagan2587"
+	}
+};
+
+if (Astro.url.pathname.includes('/blog/')) {
+	schema["@type"] = "BlogPosting";
+	schema["headline"] = title;
+	schema["description"] = description;
+	schema["image"] = [new URL(image, Astro.url).href];
+	if (pubDate) schema["datePublished"] = pubDate;
+	if (updatedDate) schema["dateModified"] = updatedDate;
+}
 ---
 
 <!-- Global Metadata -->
@@ -59,3 +81,6 @@ const { title, description, image = '/img/profile-picture.jpg' } = Astro.props;
 <meta property="twitter:title" content={title} />
 <meta property="twitter:description" content={description} />
 <meta property="twitter:image" content={new URL(image, Astro.url)} />
+
+<!-- Structured Data -->
+<script type="application/ld+json" set:html={JSON.stringify(schema)} />
