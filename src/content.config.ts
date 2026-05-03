@@ -12,6 +12,8 @@ const blog = defineCollection({
 		pubDate: z.coerce.date(),
 		updatedDate: z.coerce.date().optional(),
 		heroImage: z.string().optional(),
+		heroAlt: z.string().default('Blog post hero image'),
+		tags: z.array(z.string()).min(1, "At least one tag is required for SEO").default(['General']),
 	}),
 });
 
